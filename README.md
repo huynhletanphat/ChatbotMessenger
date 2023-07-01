@@ -6,7 +6,7 @@
 # about author 
   gmail: contact.me.phat@gmail.com 
   Facebook: https://www.facebook.com/TanPhattDay?mibextid=ZbWKwL 
-	Discord: ttphat 
+  Discord: ttphat 
          : TanPhat.Offical 
 # license 
       vi:
