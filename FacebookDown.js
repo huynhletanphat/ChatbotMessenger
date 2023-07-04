@@ -4,7 +4,7 @@ const config = {
   description: "download video on Facebook",
   usage: "<fbd> <url>",
   permission: ["3"],
-  versions: "0.0.1-beta",
+  versions: "0.0.2-beta",
   credits: "Xva - Phat",
   cooldown: 10
 }
@@ -35,9 +35,9 @@ async function onCall({ message, args, getLang }) {
 
     if (!data.hd) return message.reply(getLang("error"));
 
-    const imageStream = await global.getStream(data.hd);
+    const VideoStream = await global.getStream(data.hd);
     await message.reply({
-      attachment: [imageStream]
+      attachment: [VideoStream]
     });
   } catch (e) {
     console.error(e);
