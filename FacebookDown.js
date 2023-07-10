@@ -27,6 +27,7 @@ const langData = {
 
 async function onCall({ message, args, getLang }) {
   try {
+    await message.react("⏳"); 
     const input = args.join(" ");
     if (!input) return message.reply(getLang("missingInput"));
 
@@ -39,7 +40,9 @@ async function onCall({ message, args, getLang }) {
     await message.reply({
       attachment: [VideoStream]
     });
+    await message.react("✅");
   } catch (e) {
+    await message.react("❌");
     console.error(e);
     message.reply(getLang("error"));
   }
