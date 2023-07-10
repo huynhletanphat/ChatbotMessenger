@@ -4,6 +4,7 @@ const config = {
   aliases: ['meo', 'mèo', 'cat'],
   description: "Random image/gif của cat",
   version: "0.0.1",
+  usage: "[cat], [cat gif], [cat img]",
   cooldown: 7,
   credits: "Huỳnh Lê Tấn Phátt - Xva" 
 }
