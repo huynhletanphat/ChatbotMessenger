@@ -15,13 +15,13 @@ const langData = {
     "results": "Kết quả cho từ khóa: {name}\n{answer_vi}",
     "error": "Đã có lỗi xảy ra. Vui lòng chờ giây lát."
   },
-  "en": {
+  "en_US": {
     "missingInput": "Please enter a keyword.",
     "notFound": "No results found.",
     "results": "Results for the keyword: {name}\n{answer_en}",
     "error": "An error has occurred. Please wait a moment."
   },
-  "ar": {
+  "ar_SY": {
     "missingInput": "الرجاء إدخال كلمة مفتاحية.",
     "notFound": "لم يتم العثور على نتائج.",
     "results": "نتائج البحث عن الكلمة المفتاحية: {name}\n{answer_ar}",
