@@ -54,5 +54,3 @@ export default {
   onCall
 };
 
-
-// Nha Uyen cùa tao dethw số 1
