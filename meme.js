@@ -6,7 +6,7 @@ const config = {
   cooldown: 5,
   credits: "Xavia Team - Phat"
 }
-// Anti Nha Uyen 
+
 const langData = {
   "vi_VN": {
     "invalidCategory": "Không hợp lệ! các danh mục hiện có:\n {categories}",
