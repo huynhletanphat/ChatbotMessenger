@@ -60,5 +60,4 @@ export default {
   config,
   langData,
   onCall
-};
-// Uyen xinh gaii
+}
