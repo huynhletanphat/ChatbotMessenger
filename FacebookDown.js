@@ -1,14 +1,15 @@
 const config = {
   name: "fbdown",
-  aliases: ["fbd", "facebookdown"],
-  description: "download video on Facebook",
-  usage: "<fbd> <url>",
-  permission: ["3"],
-  versions: "0.0.2-beta",
-  credits: "Xva - Phat",
-  cooldown: 10
+  description: "download media from Facebook",
+  aliases: ["fbd", "tphat", "fbdl", "fbdowm"],
+  usage: "<fbdown> <url>",
+  cooldown: 10,
+  credits: "github.com/huynhletanphat"
 }
-
+/*
+thanks api from https://www.facebook.com/profile.php?id=100008578069233
+code by https://www.facebook.com/BbiPhatt/
+*/
 const langData = {
   "vi_VN": {
     error: "Đã có lỗi xảy ra!",
@@ -31,12 +32,14 @@ async function onCall({ message, args, getLang }) {
     const input = args.join(" ");
     if (!input) return message.reply(getLang("missingInput"));
 
-    const res = await global.GET(`https://sumiproject.space/facebook/video?url=${encodeURIComponent(input)}`);
+    const res = await global.GET(`https://api.samirthakuri.repl.co/api/videofb?url=${encodeURIComponent(input)}`, {
+      timeout: 120000
+    });
     const data = res.data;
 
-    if (!data.hd) return message.reply(getLang("error"));
+    if (!data.video) return message.reply(getLang("error"));
 
-    const VideoStream = await global.getStream(data.hd);
+    const VideoStream = await global.getStream(data.video);
     await message.reply({
       attachment: [VideoStream]
     });
@@ -53,4 +56,3 @@ export default {
   langData,
   onCall
 };
-
