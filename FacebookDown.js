@@ -3,6 +3,7 @@ const config = {
   description: "download media from Facebook",
   aliases: ["fbd", "tphat", "fbdl", "fbdowm"],
   usage: "<fbdown> <url>",
+  versions: "2.0.1",
   cooldown: 10,
   credits: "github.com/huynhletanphat"
 }
