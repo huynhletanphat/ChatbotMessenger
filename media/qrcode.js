@@ -28,7 +28,7 @@ async function onCall({ message, args, getLang }) {
     if (input.length == 0) return message.reply(getLang("Input"));
 
     global
-        .getStream(`https://project-api.tanphatt.repl.co/OtherAPIs/qr?text=${input}`)
+        .getStream(`https://7scvvv-3000.csb.app/tools/qr?text=${input}`)
         .then(stream => {
             message.reply({ attachment: stream });
         })
