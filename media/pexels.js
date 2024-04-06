@@ -1,12 +1,12 @@
-      const config = {
-        name: "pexels",
-        aliases: ["pexels", "searchimg", "image", "img"],
-        description: "Searching Images Pexels",
-        usage: "pexels <text>",
-        versinos: "1.0.0",
-        credits: "github.com/huynhletanphat",
-        cooldown: 5
-      };
+const config = {
+      name: "pexels",
+      aliases: ["pexels", "searchimg", "image", "img"],
+      description: "Searching Images Pexels",
+      usage: "pexels <text>",
+      versinos: "1.0.0",
+      credits: "github.com/huynhletanphat",
+      cooldown: 5
+};
 
 const langData = {
   "vi_VN": {
