@@ -14,7 +14,7 @@ const langData = {
   },
 };
 
-const endpoints = ["dark", "nhanvan", "lord", "typical"];
+const endpoints = ["dark", "nhanvan", "typical"];
 
 async function onCall({ message, args, getLang }) {
   try {
@@ -23,7 +23,7 @@ async function onCall({ message, args, getLang }) {
       return message.reply(
         getLang("invalidCategory", { categories: endpoints.join(", ") }),
       );
-    const res = await global.GET(`https://xqcqng-3000.csb.app/meme/${input}`);
+    const res = await global.GET(`https://7scvvv-3000.csb.app/p/meme/${input}`);
     const data = res.data;
 
     if (!data.url) return message.reply(getLang("error"));
