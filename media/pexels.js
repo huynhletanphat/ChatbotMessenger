@@ -28,7 +28,7 @@ async function onCall({ message, args, getLang }) {
     const input = args.join(" ");
     if (!input) return message.reply(getLang("missingInput"));
 
-    const res = await global.GET(`https://project-api.phattan14.repl.co/media/pexels?img=${encodeURIComponent(input)}`, {
+    const res = await global.GET(`https://7scvvv-3000.csb.app/media/pexels?img=${encodeURIComponent(input)}`, {
       timeout: 120000
     });
     const data = res.data;
