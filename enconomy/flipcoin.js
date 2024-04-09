@@ -6,7 +6,7 @@ const config = {
   aliases: [""],
   description: "flip coin with bot",
   usage: "[upside/u] [bet] or [downside/d] [bet]",
-  credits: "Xavia Team",
+  credits: "Tan Phat",
   versions: "1.0.0",
   extra: {
     minbet: 50, // The minimum bet amount
