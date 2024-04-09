@@ -48,7 +48,7 @@ const langData = {
 
 async function onCall({ message, args, extra, getLang }) {
   const { Users } = global.controllers;
-  const validChoices = ["u", "upside", "d", "downside"];
+  const validChoices = ["u", "upside", "d", "downside", "úp", ngữa];
 
   const choice = args[0]?.toLowerCase();
   const bet = BigInt(args[1] || extra.minbet);
