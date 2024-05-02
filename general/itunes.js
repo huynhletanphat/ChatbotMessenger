@@ -50,21 +50,13 @@ async function onCall({ message, args, getLang }) {
     return message.reply(
       getLang("results", {
         url: musicData.url,
-
         name: musicData.name,
-
         artist: musicData.artist,
-
         album: musicData.album,
-
         release_date: musicData.release_date,
-
         price: musicData.price,
-
         length: musicData.length,
-
         genre: musicData.genre,
-
         thumbnail: musicData.thumbnail,
       }),
     );
