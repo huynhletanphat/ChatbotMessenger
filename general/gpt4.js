@@ -1,6 +1,6 @@
 const config = {
   name: "gpt",
-  credits: "Tanphat",
+  credits: "Tanphat x API: ジョシュア ゲレロ ",
   cooldown: 5,
 };
 
